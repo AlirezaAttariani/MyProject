@@ -1,32 +1,22 @@
+def add(num1,num2):
+    return num1 + num2
 
-from main import add
-from main import multiply
-from main import subtract
-from main import divide
 
-def test_add():
-    result = add(4,2)
-    assert result == 6
-    print("success the add numbers")
+def multiply(num1,num2):
+    return num1 * num2
 
-def test_multiply():
-    result = multiply(4,2)
-    assert result == 8
-    print("success the multiply numbers")
+ 
+def subtract(num1,num2):
+    return num1 - num2
 
-def test_subtract():
-    result = subtract(4,2)
-    assert result == 2
-    print("succes the subtract numbers")
 
-def test_divide():
-    result = divide(4,2)
-    assert result == 2
-    print('success the divide numbers')
-   
+def divide(num1,num2):
+    return num1 / num2
 
-if __name__ == "__main__" :
-    test_add()
-    test_multiply()
-    test_divide()
-    test_subtract()
+
+
+print(add(4,2))
+print(multiply(4,2))
+print(subtract(4,2))
+print(divide(4,2))
+
