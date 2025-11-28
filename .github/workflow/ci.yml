@@ -1,0 +1,16 @@
+name : Python CI
+on: [push]
+jobs: 
+  build:
+    runs-on : ubuntu-latest
+    steps :
+    - name: Dowmload code
+      uses: actions/checkout@v4
+    - name: Setup python 
+      uses: actions/setup-python@v4
+      with: 
+       python-version: '3.x'
+    - name: Run main program 
+      run:  python main.py
+    - name: Run tests
+      run: = python test.py
